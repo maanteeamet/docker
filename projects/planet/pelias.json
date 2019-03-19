@@ -42,7 +42,7 @@
     },
     "openstreetmap": {
       "download": [
-        { "sourceURL": "https://planet.openstreetmap.org/pbf/planet-latest.osm.pbf" }
+        { "sourceURL": "https://s3.amazonaws.com/geocodeearth-osm-processing/planet-latest.osm.pbf" }
       ],
       "leveldbpath": "/tmp",
       "datapath": "/data/openstreetmap",
