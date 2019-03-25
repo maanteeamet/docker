@@ -65,10 +65,7 @@
       "dataHost": "https://s3.amazonaws.com/wof-dist-mirror/2019-03-17-custom",
       "datapath": "/data/whosonfirst",
       "importVenues": false,
-      "importPostalcodes": true,
-      "importPlace": [
-        "85632793"
-      ]
+      "importPostalcodes": true
     },
     "interpolation": {
       "download": {
