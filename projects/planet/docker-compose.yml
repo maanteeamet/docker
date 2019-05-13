@@ -110,7 +110,7 @@ services:
       - "./pelias.json:/code/pelias.json"
       - "${DATA_DIR}:/data"
   elasticsearch:
-    image: pelias/elasticsearch
+    image: pelias/elasticsearch:2.4
     container_name: pelias_elasticsearch
     restart: always
     environment: [ "ES_JAVA_OPTS=-Xmx8g" ]
