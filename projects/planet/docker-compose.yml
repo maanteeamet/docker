@@ -10,7 +10,7 @@ services:
     restart: always
     ports: [ "4400:4400" ]
   schema:
-    image: pelias/schema:master
+    image: pelias/schema:merged_359_and_364-2019-05-20-f4dc936b6aaf0eacf1b9e794281431060a01a918
     container_name: pelias_schema
     user: "${DOCKER_USER}"
     volumes:
