@@ -44,7 +44,7 @@ services:
       - "${DATA_DIR}:/data"
       - "./blacklist/:/data/blacklist"
   openstreetmap:
-    image: pelias/openstreetmap:master
+    image: pelias/openstreetmap:remove_name_for_addresses-2019-05-24-4273dfe240db393f3394fb468ca3e6be5505070d
     container_name: pelias_openstreetmap
     user: "${DOCKER_USER}"
     volumes:
@@ -52,7 +52,7 @@ services:
       - "${DATA_DIR}:/data"
       - "./blacklist/:/data/blacklist"
   openaddresses:
-    image: pelias/openaddresses:master
+    image: pelias/openaddresses:remove_name_for_addresses-2019-05-24-7cdd796a92a4fd59d3c9ab87a40475bffcbc3919
     container_name: pelias_openaddresses
     user: "${DOCKER_USER}"
     volumes:
