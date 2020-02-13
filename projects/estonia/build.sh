@@ -9,7 +9,7 @@ chown 1000:1000 /code /data
 
 # clone repo
 cd /code
-git clone https://github.com/dolmit/pelias-docker.git
+git clone https://github.com/maanteeamet/pelias-docker.git
 cd pelias-docker
 
 # install pelias script
