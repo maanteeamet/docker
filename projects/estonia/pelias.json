@@ -44,7 +44,7 @@
   },
   "imports": {
     "adminLookup": {
-      "enabled": false
+      "enabled": true
     },
     "geonames": {
       "datapath": "/data/geonames",
