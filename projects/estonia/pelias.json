@@ -62,8 +62,7 @@
     },
     "openaddresses": {
       "datapath": "/data/openaddresses",
-      "files": ["ee/countrywide.csv"],
-      "dataHost": "https://data.openaddresses.io/runs/811708/ee/countrywide.zip"
+      "files": ["ee/countrywide.csv"]
     },
     "polyline": {
       "datapath": "/data/polylines",
