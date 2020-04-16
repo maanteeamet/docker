@@ -52,7 +52,7 @@ services:
       - "./pelias.json:/code/pelias.json"
       - "${DATA_DIR}:/data"
   openaddresses:
-    image: pelias/openaddresses:master
+    image: registry.mnt.ee/peatusee/openaddresses:master
     container_name: pelias_openaddresses
     user: "${DOCKER_USER}"
     volumes:
