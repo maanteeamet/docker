@@ -20,7 +20,7 @@ register 'download' 'csv' '(re)download csv data' download_csv
 
 # download all the data to be used by imports
 function download_all(){
-  download_wof &
+  # download_wof &
   download_oa &
   download_osm &
 
