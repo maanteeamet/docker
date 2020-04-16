@@ -62,7 +62,8 @@
     },
     "openaddresses": {
       "datapath": "/data/openaddresses",
-      "files": ["ee/countrywide.csv"]
+      "files": ["eesti.csv"],
+      "dataHost": "http://address.dev.peatus.ee"
     },
     "polyline": {
       "datapath": "/data/polylines",
