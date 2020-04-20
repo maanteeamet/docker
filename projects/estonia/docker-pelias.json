@@ -59,6 +59,12 @@
       "datapath": "/data/polylines",
       "files": [ "extract.0sv" ]
     },
+    "whosonfirst": {
+      "datapath": "/data/whosonfirst",
+      "importVenues": false,
+      "importPostalcodes": true,
+      "importPlace": [ "85633135" ]
+    },
     "transit": {
       "datapath": "/data/transit",
       "feeds": [
