@@ -32,10 +32,7 @@
     },
     "customBoosts": {
       "layer": {
-        "venue": 5,
-        "address": 4,
-        "locality": 3,
-        "street": 2
+        "address": 4
       },
       "source": {
         "gtfsestonia": 3,
