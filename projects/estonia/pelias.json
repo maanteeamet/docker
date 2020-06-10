@@ -69,7 +69,6 @@
     },
     "whosonfirst": {
       "datapath": "/data/whosonfirst",
-      "importVenues": false,
       "importPostalcodes": true,
       "importPlace": [ "85633135" ]
     },
