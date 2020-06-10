@@ -7,13 +7,13 @@ networks:
 
 services:
   libpostal:
-    image: pelias/libpostal-service
+    image: pelias/libpostal-service:master-2020-03-13-d80011c11d4313f7d25adcb67e52031c1422010b
     container_name: pelias_libpostal
     user: "${DOCKER_USER}"
     restart: always
     ports: [ "4400:4400" ]
   schema:
-    image: pelias/schema:master
+    image: pelias/schema:master-2020-05-20-c242e84c866289ff03204152935b5136c5c129e4
     container_name: pelias_schema
     user: "${DOCKER_USER}"
     volumes:
@@ -28,7 +28,7 @@ services:
     volumes:
       - "./pelias.json:/code/pelias.json"
   placeholder:
-    image: pelias/placeholder:master
+    image: pelias/placeholder:master-2020-06-08-18d8a3abbbadce5a5bd916ea0d672635ad850ba1
     container_name: pelias_placeholder
     user: "${DOCKER_USER}"
     restart: always
@@ -38,14 +38,14 @@ services:
       - "./pelias.json:/code/pelias.json"
       - "${DATA_DIR}:/data"
   whosonfirst:
-    image: pelias/whosonfirst:master
+    image: pelias/whosonfirst:master-2020-06-10-24e175d5f3cf9f0958ce2713c527fbf85aad697e
     container_name: pelias_whosonfirst
     user: "${DOCKER_USER}"
     volumes:
       - "./pelias.json:/code/pelias.json"
       - "${DATA_DIR}:/data"
   openstreetmap:
-    image: pelias/openstreetmap:master
+    image: pelias/openstreetmap:master-2020-06-01-3303aa1e9f865604f5cf849e8ee9943543b13a86
     container_name: pelias_openstreetmap
     user: "${DOCKER_USER}"
     volumes:
@@ -59,21 +59,21 @@ services:
       - "./pelias.json:/code/pelias.json"
       - "${DATA_DIR}:/data"
   transit:
-    image: pelias/transit:master
+    image: pelias/transit:master-2020-04-23-bf1adb31f201e887990a6787c30292e025a165ea
     container_name: pelias_transit
     user: "${DOCKER_USER}"
     volumes:
       - "./pelias.json:/code/pelias.json"
       - "${DATA_DIR}:/data"
   polylines:
-    image: pelias/polylines:master
+    image: pelias/polylines:master-2020-05-28-bf32225e9e3962a3a19237123005d6cf07f79fae
     container_name: pelias_polylines
     user: "${DOCKER_USER}"
     volumes:
       - "./pelias.json:/code/pelias.json"
       - "${DATA_DIR}:/data"
   interpolation:
-    image: pelias/interpolation:master
+    image: pelias/interpolation:master-2020-05-13-0fd6730230a7bca0dc3e07ee5c124090aeccaa7d
     container_name: pelias_interpolation
     user: "${DOCKER_USER}"
     restart: always
@@ -83,7 +83,7 @@ services:
       - "./pelias.json:/code/pelias.json"
       - "${DATA_DIR}:/data"
   pip:
-    image: pelias/pip-service:master
+    image: pelias/pip-service:master-2020-05-08-cdb7c2772ebaec2e69dd08b1c0fef18cbe9c343e
     container_name: pelias_pip-service
     user: "${DOCKER_USER}"
     restart: always
@@ -93,7 +93,7 @@ services:
       - "./pelias.json:/code/pelias.json"
       - "${DATA_DIR}:/data"
   csv-importer:
-    image: pelias/csv-importer:master
+    image: pelias/csv-importer:master-2020-06-05-720ed149e97747d87e1908bc8b6608195cc447a8
     container_name: pelias_csv_importer
     user: "${DOCKER_USER}"
     volumes:
