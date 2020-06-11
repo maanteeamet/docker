@@ -2,7 +2,7 @@
 set -x
 
 # create directories
-mkdir /code /data
+mkdir /code /data /data/whosonfirst /data/whosonfirst/sqlite
 
 # set proper permissions. make sure the user matches your `DOCKER_USER` setting in `.env`
 chown 1000:1000 /code /data
@@ -11,6 +11,7 @@ chown 1000:1000 /code /data
 cd /code
 git clone https://github.com/maanteeamet/pelias-docker.git
 cd pelias-docker
+
 
 # install pelias script
 ln -s "$(pwd)/pelias" /usr/local/bin/pelias
