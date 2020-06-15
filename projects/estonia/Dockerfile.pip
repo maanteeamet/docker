@@ -1,3 +1,4 @@
 FROM pelias/pip-service:master
 COPY --chown=1000:1000 ./docker-pelias.json /code/pelias.json
 COPY --chown=1000:1000 ./ /data/
+RUN mkdir -p /data/whosonfirst/sqlite
