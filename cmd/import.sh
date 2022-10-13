@@ -5,6 +5,7 @@ set -e;
 function import_wof(){ compose_run 'whosonfirst' './bin/start'; }
 function import_oa(){ compose_run 'openaddresses' "./bin/parallel ${OPENADDRESSES_PARALLELISM:-1}"; }
 function import_osm(){ compose_run 'openstreetmap' './bin/start'; }
+function import_osm_venues(){ compose_run 'openstreetmap-venues' './bin/start'; }
 function import_polylines(){ compose_run 'polylines' './bin/start'; }
 function import_geonames(){ compose_run 'geonames' './bin/start'; }
 function import_transit(){ compose_run 'transit' './bin/start'; }
@@ -24,6 +25,7 @@ function import_all(){
   # import_wof
   import_oa
   import_osm
+  import_osm_venues
   import_polylines
 
   if [[ "$ENABLE_GEONAMES" == "true" ]]; then

@@ -59,6 +59,13 @@
         "filename": "estonia-latest.osm.pbf"
       }]
     },
+    "openstreetmap-venues": {
+      "download": [
+        { "sourceURL": "http://amenities-overpass-proxy:8080/" }
+      ],
+      "leveldbpath": "/tmp",
+      "datapath": "/data/openstreetmap"
+    },
     "openaddresses": {
       "datapath": "/data/openaddresses",
       "dataHost": "http://address.dev.peatus.ee"

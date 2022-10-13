@@ -51,6 +51,13 @@ services:
     volumes:
       - "./pelias.json:/code/pelias.json"
       - "${DATA_DIR}:/data"
+  openstreetmap-venues:
+    image: registry.mnt.ee/peatusee/openstreetmap:latest
+    container_name: pelias_openstreetmap_venues
+    user: "${DOCKER_USER}"
+    volumes:
+      - "./pelias.json:/code/pelias.json"
+      - "${DATA_DIR}:/data"
   openaddresses:
     image: registry.mnt.ee/peatusee/openaddresses:latest
     container_name: pelias_openaddresses
