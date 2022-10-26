@@ -71,7 +71,7 @@
       "dataHost": "http://address.dev.peatus.ee"
     },
     "openaddresses-venues": {
-      "datapath": "/data/openaddresses",
+      "datapath": "/data/openaddresses-venues",
       "dataHost": "https://xgis.maaamet.ee/adsavalik/valjav6te/"
     },
     "polyline": {
