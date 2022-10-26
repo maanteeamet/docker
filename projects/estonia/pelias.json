@@ -70,6 +70,10 @@
       "datapath": "/data/openaddresses",
       "dataHost": "http://address.dev.peatus.ee"
     },
+    "openaddresses-venues": {
+      "datapath": "/data/openaddresses",
+      "dataHost": "https://xgis.maaamet.ee/adsavalik/valjav6te/"
+    },
     "polyline": {
       "datapath": "/data/polylines",
       "files": [ "extract.0sv" ]

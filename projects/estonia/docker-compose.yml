@@ -65,6 +65,13 @@ services:
     volumes:
       - "./pelias.json:/code/pelias.json"
       - "${DATA_DIR}:/data"
+  openaddresses-venues:
+    image: registry.mnt.ee/peatusee/openaddresses-venues:latest
+    container_name: pelias_openaddresses_venues
+    user: "${DOCKER_USER}"
+    volumes:
+      - "./pelias.json:/code/pelias.json"
+      - "${DATA_DIR}:/data"
   transit:
     image: pelias/transit:master-2020-04-23-bf1adb31f201e887990a6787c30292e025a165ea
     container_name: pelias_transit
