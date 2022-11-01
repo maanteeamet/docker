@@ -28,7 +28,7 @@ function import_all(){
   # import_wof
   import_oa
   import_oa_venues
-  import_osm
+  #import_osm
   import_osm_venues
   import_polylines
 
